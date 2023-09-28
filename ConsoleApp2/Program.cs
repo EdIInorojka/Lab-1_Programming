@@ -4,9 +4,6 @@ using System.Security.Cryptography.X509Certificates;
 public class Programm1
 {
 
-    int n = 1;
-    int m = 2;
-    int result;
     public static void Main(string[] args)
     {
         Task1();
