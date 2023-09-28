@@ -3,6 +3,10 @@ using System.Security.Cryptography.X509Certificates;
 
 public class Programm1
 {
+
+    int n = 1;
+    int m = 2;
+    int result;
     public static void Main(string[] args)
     {
         Task1();
@@ -11,12 +15,14 @@ public class Programm1
     }
 
     #region Задание 1
+
     public static void Task1()
     {
         double n;
         double m;
         bool isNumN = false;
         bool isNumM = false;
+
 
         do //Цикл ввода чисел m и n
         {
@@ -52,16 +58,19 @@ public class Programm1
 
         } while (!isNumX); //Проверка правильности значения для выхода из цикла
 
-        double res4 = Math.Cos(Math.Atan(x)); //Пример 3
+        double res4 = Math.Cos(Math.Atan(x)); //Пример 4
+
         Console.WriteLine("Результат 1: " + res1);
         Console.WriteLine("Результат 2: " + res2);
         Console.WriteLine("Результат 3: " + res3);
         Console.WriteLine("Результат 4: " + res4);
         Console.WriteLine("--------------------------------------------------------------------------------------------------------");
     }
+
     #endregion
 
     #region Задание 2
+
     public static void Task2()
     {
         bool XparseResult = false;
@@ -107,13 +116,16 @@ public class Programm1
         }
         Console.WriteLine("--------------------------------------------------------------------------------------------------------");
     }
+
     #endregion
 
     #region Задание 3
+
     public static void Task3()
     {
         double a = 1000;
         double b = 0.00001;
+
 
         double numerator = (Math.Pow((a - b), 4) - (Math.Pow(a, 4) + 6 * a * a * b * b + Math.Pow(b, 4))); //Числитель
         double denominator = ((-4) * a * Math.Pow(b, 3) - 4 * Math.Pow(a, 3) * b); //Знаменатель
@@ -125,5 +137,7 @@ public class Programm1
         Console.WriteLine("Float: " + result2);
         Console.WriteLine("Ответы различны так как float, имея всего 7 знаков после запятой, округлил 0.9999999 до 1, а double - нет");
     }
+
     #endregion
+
 }
